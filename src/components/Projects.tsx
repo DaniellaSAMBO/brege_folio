@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
     {
       id: 'project4',
       image: 'https://images.unsplash.com/photo-1596558450255-7c0b7be9d56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      tags: ['Mobile', 'Security', 'Blockchain', 'API'],
+      tags: ['Mobile', 'Security', 'Flutter', 'Dart'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/Brege-NG',
       detailImages: [
