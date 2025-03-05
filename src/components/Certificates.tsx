@@ -84,7 +84,7 @@ const Certificates: React.FC = () => {
       title: 'Jenkins CI/CD',
       issuer: 'Udemy',
       date: '2022',
-      image: 'https://images.unsplash.com/photo-1607743386760-88f10eb85a79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
       url: '#',
       description: 'This certification demonstrates my proficiency in implementing CI/CD pipelines using Jenkins. It covers topics such as pipeline creation, integration with version control systems, automated testing, and deployment strategies for various environments.'
     },
