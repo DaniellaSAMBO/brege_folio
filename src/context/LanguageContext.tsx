@@ -66,64 +66,83 @@ export const translations = {
     'certificates.certificatesTitle': 'Professional Certifications',
     'certificates.view': 'View Certificate',
 
-    // Project 1
-    'project1.title': 'Infrastructure as Code',
-    'project1.description': 'Implementation of a complete infrastructure on AWS using Terraform and Ansible. Automation of server, network, and service provisioning with a GitOps approach.',
-    'project1.detailDescription': `This project involved setting up a complete infrastructure on AWS using Terraform for resource provisioning and Ansible for server configuration.
+//     // Project 1
+//     'project1.title': 'Infrastructure as Code',
+//     'project1.description': 'Implementation of a complete infrastructure on AWS using Terraform and Ansible. Automation of server, network, and service provisioning with a GitOps approach.',
+//     'project1.detailDescription': `This project involved setting up a complete infrastructure on AWS using Terraform for resource provisioning and Ansible for server configuration.
 
-Key achievements include:
-- Creation of a multi-AZ VPC with public and private subnets
-- Deployment of auto-scaling EC2 instances behind a load balancer
-- Configuration of an RDS database with replication
-- Implementation of an S3 storage system for backups
-- Complete deployment automation via CI/CD pipelines
-- Implementation of security and monitoring best practices
+// Key achievements include:
+// - Creation of a multi-AZ VPC with public and private subnets
+// - Deployment of auto-scaling EC2 instances behind a load balancer
+// - Configuration of an RDS database with replication
+// - Implementation of an S3 storage system for backups
+// - Complete deployment automation via CI/CD pipelines
+// - Implementation of security and monitoring best practices
 
-All infrastructure code is versioned and follows a GitOps approach, allowing for reproducible and auditable deployments.`,
+// All infrastructure code is versioned and follows a GitOps approach, allowing for reproducible and auditable deployments.`,
 
     // Project 2
     'project2.title': 'CI/CD Pipeline',
-    'project2.description': 'Design and implementation of a complete CI/CD pipeline with Jenkins for a react application with json-server. Integration of automated tests, code analysis, and continuous deployment on Netlify.',
-    'project2.detailDescription': `This project involved designing and implementing a complete CI/CD pipeline for a microservices architecture, using Jenkins as the main orchestration tool.
+    'project2.description': 'Design and implementation of a complete CI/CD pipeline with Jenkins for a React application using JSON-Server, including code analysis and continuous deployment on Netlify.',
+    'project2.detailDescription': `Recently, I developed a TodoList application using JSON-Server for the back-end and Axios for the front-end. I also set up a continuous integration and automatic deployment workflow.
 
-The pipeline includes the following stages:
-- Continuous integration with automated unit and integration tests
-- Static code analysis with SonarQube
-- Building and publishing Docker images to a private registry
-- Automated deployment to a Kubernetes cluster
-- Post-deployment load and performance testing
-- Automated monitoring and alerting
+The pipeline includes the following steps:
 
-This solution reduced the deployment time for new features from several days to less than an hour, while significantly improving the quality and reliability of deployments.`,
+- Install dependencies
+- Build Application
+- Clean all of the containers
+- Staging-deploy App
+- Build for production
+- Deploy to Netlify
+
+🐳 Dockerization I dockerized my application by creating a Dockerfile for the front-end and using Docker Compose to orchestrate the entire setup with JSON-Server, making my application easily deployable.
+
+⚙️ Continuous Integration with Jenkins I configured a CI pipeline with Jenkins, which triggers on every commit. This pipeline checks the status of Docker images and my docker-compose.ymlfile, using secured credentials to access the necessary resources. I also used ngrok to expose the application locally and set up a webhook.
+
+💻 Free Deployment on Netlify I chose Netlify to host my application. With every commit validation, my pipeline automatically deploys the changes with no additional effort.
+
+🤩 Advantages 
+✔️ Dockerization: Facilitates deployment and portability. 
+✔️ Continuous Integration with Jenkins: Quickly validates code changes using secured credentials. 
+✔️ Free Deployment: Significantly reduces infrastructure costs.`,
 
     // Project 3
     'project3.title': 'Monitoring System',
-    'project3.description': 'Implementation of a complete monitoring solution with Prometheus and Grafana to monitor application and infrastructure performance. Configuration of alerts and custom dashboards.',
-    'project3.detailDescription': `This project involved setting up a comprehensive monitoring solution for cloud infrastructure and distributed applications, using Prometheus for metrics collection and Grafana for visualization.
+    'project3.description': 'Implementation of a comprehensive monitoring solution with Prometheus and Grafana to monitor application and infrastructure performance. Configuration of alerts and custom dashboards.',
+    'project3.detailDescription': `This project involved setting up a complete monitoring solution for a cloud infrastructure and distributed applications, using Prometheus for metric collection and Grafana for visualization.
 
-Key features include:
-- Real-time system and application metrics collection
-- Custom dashboards for different teams (development, operations, management)
-- Intelligent alerting system with automatic routing and escalation
-- Integration with ticketing and communication systems (Slack, PagerDuty)
-- Metrics historization for trend analysis and capacity planning
+The main features include:
 
-This solution significantly improved problem detection and resolution, reducing the mean time to resolution (MTTR) by 65%.`,
+Real-time system and application metric collection
+
+Custom dashboards for different teams (development, operations, management)
+
+Intelligent alerting system with automatic routing and escalation
+
+Integration with ticketing and communication systems (Slack, PagerDuty, Gmail)
+
+Metric historization for trend analysis and capacity planning
+
+First, Prometheus is used to collect and store real-time metrics. This includes data such as CPU usage, memory, request rates, and more. 🖥️
+
+For alert management, I integrated Alertmanager with Prometheus. This allows me to define specific alert rules and receive email notifications via Gmail when certain conditions are met, ensuring proactive system monitoring. 📧
+
+I also configured Node Exporter, which is a tool for monitoring system metrics such as disk and network usage. Blackbox Exporter is used to monitor external endpoints and ensure they are accessible and functional. 📈
+
+All these collected data are then visualized and presented in Grafana. Grafana allows creating interactive and customizable dashboards, offering a comprehensive and real-time view of the monitored systems' status. 🌐`,
 
     // Project 4
     'project4.title': 'Authentication Mobile App',
-    'project4.description': 'Development of a secure mobile application to verify the authenticity of driver\'s licenses and vehicle registration documents. Use of blockchain technology to ensure data integrity.',
+    'project4.description': 'Creation of a mobile app for Permit/Registration Card control.',
     'project4.detailDescription': `This innovative project involved developing a mobile application that allows instant verification of the authenticity of driver's licenses and vehicle registration documents to combat document fraud.
 
-Key features:
-- Secure document scanning via smartphone camera
-- Real-time verification against official databases
-- Use of blockchain technology to ensure data integrity
-- Two-factor authentication system for authorized users
-- Timestamped verification history for audit purposes
-- GDPR compliance with sensitive data encryption
+    I am thrilled to announce the launch of my mobile app for Permit and Registration Card control, developed with Flutter, Dart, and Firebase. This innovative solution aims to simplify and secure administrative verifications for traffic officers. 🚀
 
-The backend infrastructure was deployed on AWS with a highly available and secure architecture, using Docker containers orchestrated by Kubernetes to ensure service scalability and resilience.`,
+With a user-friendly interface and robust features, the app allows efficient real-time document management. Users can log in, scan the QR code on their permit to verify its authenticity, and enter a registration card number to validate its information. 🌐
+
+Users can now securely store and access their information, thanks to Firebase integration. 🔒
+
+Feel free to test the app and share your feedback! 😊`,
 
     // Contact
     'contact.title': 'Contact Me',
@@ -198,35 +217,49 @@ The backend infrastructure was deployed on AWS with a highly available and secur
     'certificates.certificatesTitle': 'Certifications Professionnelles',
     'certificates.view': 'Voir le Certificat',
 
-    // Project 1
-    'project1.title': 'Infrastructure as Code',
-    'project1.description': 'Mise en place d\'une infrastructure complète sur AWS en utilisant Terraform et Ansible. Automatisation du provisionnement des serveurs, des réseaux et des services avec une approche GitOps.',
-    'project1.detailDescription': `Ce projet a consisté à mettre en place une infrastructure complète sur AWS en utilisant Terraform pour le provisionnement des ressources et Ansible pour la configuration des serveurs.
+//     // Project 1
+//     'project1.title': 'Infrastructure as Code',
+//     'project1.description': 'Mise en place d\'une infrastructure complète sur AWS en utilisant Terraform et Ansible. Automatisation du provisionnement des serveurs, des réseaux et des services avec une approche GitOps.',
+//     'project1.detailDescription': `Ce projet a consisté à mettre en place une infrastructure complète sur AWS en utilisant Terraform pour le provisionnement des ressources et Ansible pour la configuration des serveurs.
 
-Les principales réalisations incluent:
-- Création d'un réseau VPC multi-AZ avec sous-réseaux publics et privés
-- Déploiement d'instances EC2 auto-scalables derrière un équilibreur de charge
-- Configuration d'une base de données RDS avec réplication
-- Mise en place d'un système de stockage S3 pour les sauvegardes
-- Automatisation complète du déploiement via des pipelines CI/CD
-- Implémentation de bonnes pratiques de sécurité et de surveillance
+// Les principales réalisations incluent:
+// - Création d'un réseau VPC multi-AZ avec sous-réseaux publics et privés
+// - Déploiement d'instances EC2 auto-scalables derrière un équilibreur de charge
+// - Configuration d'une base de données RDS avec réplication
+// - Mise en place d'un système de stockage S3 pour les sauvegardes
+// - Automatisation complète du déploiement via des pipelines CI/CD
+// - Implémentation de bonnes pratiques de sécurité et de surveillance
 
-L'ensemble du code d'infrastructure est versionné et suit une approche GitOps, permettant des déploiements reproductibles et auditables.`,
+// L'ensemble du code d'infrastructure est versionné et suit une approche GitOps, permettant des déploiements reproductibles et auditables.`,
 
     // Project 2
     'project2.title': 'Pipeline CI/CD',
-    'project2.description': 'Conception et implémentation d\'un pipeline CI/CD complet avec Jenkins pour une application React avec json-server. Intégration des tests automatisés, de l\'analyse de code et du déploiement continu sur Metlify.',
-    'project2.detailDescription': `Ce projet a impliqué la conception et l'implémentation d'un pipeline CI/CD complet pour une architecture microservices, utilisant Jenkins comme outil principal d'orchestration.
+    'project2.description': 'Conception et implémentation d\'un pipeline CI/CD complet avec Jenkins pour une application React avec json-server. de l\'analyse de code et du déploiement continu sur Netlify.',
+    'project2.detailDescription': `Récemment, j'ai développé une application TodoList avec JSON-Server pour le back-end et Axios pour le front-end. J'ai également mis en place un workflow d'intégration continue et de déploiement automatique.
 
 Le pipeline comprend les étapes suivantes:
-- Intégration continue avec tests unitaires et d'intégration automatisés
-- Analyse statique du code avec SonarQube
-- Construction et publication d'images Docker dans un registre privé
-- Déploiement automatisé sur un cluster Kubernetes
-- Tests de charge et de performance post-déploiement
-- Surveillance et alertes automatisées
+- Installer les dépendances
+- Builder l'application
+- supprimer tous les containers
+- Déploiement en staging
+- Builder pour la production
+- Deployer sur Netlify
 
-Cette solution a permis de réduire le temps de déploiement de nouvelles fonctionnalités de plusieurs jours à moins d'une heure, tout en améliorant considérablement la qualité et la fiabilité des déploiements.`,
+🐳 Dockerisation
+J'ai dockerisé mon application en créant un Dockerfile pour le front-end et en utilisant Docker Compose pour orchestrer l'ensemble avec JSON-Server, rendant ainsi mon application facilement déployable.
+
+⚙️ Intégration continue avec Jenkins
+J'ai configuré un pipeline CI avec Jenkins, qui se déclenche à chaque commit. Ce pipeline vérifie l'état des images Docker et de mon fichier docker-compose.yml, en utilisant des credentials sécurisés pour accéder aux ressources nécessaires. J'ai également utilisé ngrok pour exposer l'application localement et configurer un webhook.
+
+💻 Déploiement gratuit sur Netlify
+J'ai choisi Netlify pour héberger mon application. À chaque validation de commit, mon pipeline déploie automatiquement les changements, sans effort supplémentaire.
+
+🤩 Les avantages
+ ✔️Dockerisation : Facilite le déploiement et la portabilité.
+ ✔️Intégration continue avec Jenkins : Valide rapidement les modifications de code tout en utilisant des credentials sécurisés.
+ ✔️Déploiement gratuit : Réduit considérablement les coûts d'infrastructure.
+
+`,
 
     // Project 3
     'project3.title': 'Système de Monitoring',
@@ -237,25 +270,37 @@ Les principales fonctionnalités incluent:
 - Collecte de métriques système et applicatives en temps réel
 - Tableaux de bord personnalisés pour différentes équipes (développement, opérations, management)
 - Système d'alerte intelligent avec routage et escalade automatiques
-- Intégration avec les systèmes de ticketing et de communication (Slack, PagerDuty)
+- Intégration avec les systèmes de ticketing et de communication (Slack, PagerDuty, gmail)
 - Historisation des métriques pour l'analyse des tendances et la planification de capacité
 
-Cette solution a permis d'améliorer considérablement la détection et la résolution des problèmes, réduisant le temps moyen de résolution (MTTR) de 65%.`,
+Tout d'abord, Prometheus est utilisé pour collecter et stocker des métriques en temps réel. Cela inclut des données telles que l'utilisation du CPU, la mémoire, les taux de requêtes, etc. 🖥️
+
+
+Pour la gestion des alertes, j'ai intégré Alertmanager à Prometheus. Cela me permet de définir des règles d'alerte spécifiques et de recevoir des notifications par email sur Gmail lorsque certaines conditions sont remplies, garantissant ainsi une surveillance proactive des systèmes. 📧
+
+
+J'ai également configuré Node Exporter, qui est un outil permettant de surveiller les métriques du système, comme l'utilisation du disque et du réseau. Blackbox Exporter, quant à lui, permet de surveiller les points de terminaison externes et de s'assurer qu'ils sont accessibles et fonctionnels. 📈
+
+
+Toutes ces données collectées sont ensuite visualisées et présentées dans Grafana. Grafana permet de créer des tableaux de bord interactifs et personnalisables, offrant une vue complète et en temps réel de l'état des systèmes surveillés. 🌐`,
 
     // Project 4
-    'project4.title': 'App Mobile d\'Authentification',
-    'project4.description': 'Développement d\'une application mobile sécurisée pour vérifier l\'authenticité des permis de conduire et cartes grises. Utilisation de la technologie blockchain pour garantir l\'intégrité des données.',
+    'project4.title': 'App Mobile d\'Authenticité',
+    'project4.description': 'Création d\'une app mobile pour le contrôle Permis/Carte grise',
     'project4.detailDescription': `Ce projet innovant a consisté à développer une application mobile permettant de vérifier instantanément l'authenticité des permis de conduire et des cartes grises, afin de lutter contre la fraude documentaire.
 
-Caractéristiques principales:
-- Scan sécurisé des documents via l'appareil photo du smartphone
-- Vérification en temps réel auprès des bases de données officielles
-- Utilisation de la technologie blockchain pour garantir l'intégrité des données
-- Système d'authentification à deux facteurs pour les utilisateurs autorisés
-- Historique des vérifications avec horodatage pour les besoins d'audit
-- Conformité RGPD avec chiffrement des données sensibles
+Je suis ravi d'annoncer le lancement de mon application mobile pour le contrôle des Permis et Cartes Grises, développée avec Flutter, Dart et Firebase. Cette solution innovante vise à simplifier et à sécuriser les vérifications administratives pour les agents de la circulation. 🚀
 
-L'infrastructure backend a été déployée sur AWS avec une architecture hautement disponible et sécurisée, utilisant des conteneurs Docker orchestrés par Kubernetes pour assurer l'évolutivité et la résilience du service.`,
+
+Avec une interface conviviale et des fonctionnalités robustes, l'application permet une gestion efficace des documents en temps réel. Les utilisateurs peuvent se connecter, scanner le code QR sur leur permis pour vérifier son authenticité, et entrer un numéro de carte grise pour valider ses informations. 🌐
+
+
+Les utilisateurs peuvent désormais stocker et accéder à leurs informations en toute sécurité, grâce à l'intégration de Firebase. 🔒
+
+
+N'hésitez pas à tester l'application et à partager vos retours ! 😊
+
+    `,
 
     // Contact
     'contact.title': 'Contactez-Moi',

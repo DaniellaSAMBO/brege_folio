@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
       id: 'project2',
       image:'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
       tags: ['Jenkins', 'Docker', 'Netlify', 'Git/Github', 'CI/CD'],
-      liveUrl: 'https://example.com',
+      // liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/Brege-NG',
       detailImages: [
         'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
@@ -82,8 +82,8 @@ const Projects: React.FC = () => {
       id: 'project3',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       tags: ['Prometheus', 'Grafana', 'Monitoring', 'Alerting'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/Brege-NG',
+      // liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/Brege-NG/prometheus-grafana_configuration',
       detailImages: [
         'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         'https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
@@ -93,8 +93,8 @@ const Projects: React.FC = () => {
       id: 'project4',
       image: 'https://images.unsplash.com/photo-1596558450255-7c0b7be9d56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       tags: ['Mobile', 'Security', 'Flutter', 'Dart'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/Brege-NG',
+      // liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/rv-gates/permis-Carte_grise',
       detailImages: [
         'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         'https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
@@ -265,14 +265,14 @@ const Projects: React.FC = () => {
                 >
                   <Github className="h-5 w-5 mr-2" /> {t('projects.viewCode')}
                 </a>
-                <a
+                {/* <a
                   href={projects.find(p => p.id === selectedProject)?.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-colors inline-flex items-center"
                 >
                   <ExternalLink className="h-5 w-5 mr-2" /> {t('projects.viewProject')}
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
