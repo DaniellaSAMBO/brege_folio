@@ -86,6 +86,9 @@ const Projects: React.FC = () => {
       tags: ['Jenkins', 'Docker', 'Netlify', 'Git/Github', 'CI/CD'],
       // liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/Brege-NG',
+      detailsImages: [
+        C0,C1,C2,C3,C4
+      ]
     
 
 },
