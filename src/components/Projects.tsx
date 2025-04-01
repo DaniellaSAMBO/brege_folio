@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import C0 from '../components/assets/C0.png';
-import C1 from '../components/assets/C1.png';
-import C2 from '../components/assets/C2.png';
-import C3 from '../components/assets/C3.png';
-import C4 from '../components/assets/C4.png';
+import Ch0 from '../components/assets/C0.png';
+import Ch1 from '../components/assets/C1.png';
+import Ch2 from '../components/assets/C2.png';
+import Ch3 from '../components/assets/C3.png';
+import Ch4 from '../components/assets/C4.png';
 import ph1 from '../components/assets/ph1.png';
 import ph2 from '../components/assets/ph2.png';
 import ph3 from '../components/assets/ph3.png';
@@ -87,10 +87,8 @@ const Projects: React.FC = () => {
       // liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/Brege-NG',
       detailsImages: [
-        C0,C1,C2,C3,C4
+        Ch0,Ch1,Ch2,Ch3,Ch4
       ]
-    
-
 },
     {
       id: 'project3',
