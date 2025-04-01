@@ -1,6 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import C0 from '../components/assets/C0.png';
+import C1 from '../components/assets/C1.png';
+import C2 from '../components/assets/C2.png';
+import C3 from '../components/assets/C3.png';
+import C4 from '../components/assets/C4.png';
+import ph1 from '../components/assets/ph1.png';
+import ph2 from '../components/assets/ph2.png';
+import ph3 from '../components/assets/ph3.png';
+import ph4 from '../components/assets/ph4.png';
 
 interface Project {
   id: string;
@@ -11,8 +20,11 @@ interface Project {
   detailImages?: string[];
 }
 
+
+
 const Projects: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
@@ -74,10 +86,9 @@ const Projects: React.FC = () => {
       tags: ['Jenkins', 'Docker', 'Netlify', 'Git/Github', 'CI/CD'],
       // liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/Brege-NG',
-      detailImages: [
-        'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',      ]
-    },
+    
+
+},
     {
       id: 'project3',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
@@ -96,8 +107,10 @@ const Projects: React.FC = () => {
       // liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/rv-gates/permis-Carte_grise',
       detailImages: [
-        'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-        'https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+        ph1,
+        ph2,
+        ph3,
+        ph4
       ]
     },
   ];
@@ -112,6 +125,15 @@ const Projects: React.FC = () => {
     document.body.style.overflow = 'auto';
   };
 
+  const openImageModal = (imageUrl: string) => {
+    setSelectedImage(imageUrl);
+  };
+  
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+  
+
   const getProjectTitle = (projectId: string) => {
     return t(`${projectId}.title`);
   };
@@ -124,6 +146,14 @@ const Projects: React.FC = () => {
     return t(`${projectId}.detailDescription`);
   };
 
+  const images = [
+    { id: 1, src: C0, alt: "Description image 1" },
+    { id: 2, src: C1, alt: "Description image 2" },
+    { id: 3, src: C2, alt: "Description image 3" },
+    { id: 4, src: C3, alt: "Description image 4" },
+    { id: 5, src: C4, alt: "Description image 5" }
+  ];
+  
   return (
     <section id="projects" ref={sectionRef} className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -220,8 +250,34 @@ const Projects: React.FC = () => {
             </div>
             
             <div className="p-6">
+      
+              
+              {/* Detailed description */}
+              <div className="prose max-w-none">
+                <p className="text-gray-700 whitespace-pre-line">
+                  {getProjectDetailDescription(selectedProject)}
+                </p>
+                </div>
+              
               {/* Image gallery */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                {projects.find(p => p.id === selectedProject)?.detailImages?.map((img, idx) => (
+                  <div 
+                    key={idx} 
+                    className="rounded-lg overflow-hidden shadow-md h-48 cursor-pointer transform transition-all duration-300 hover:scale-105"
+                    onClick={() => openImageModal(img)}
+                  >
+                    <img 
+                      src={img} 
+                      alt={`${getProjectTitle(selectedProject)} - Image ${idx + 1}`} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+
+
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 {projects.find(p => p.id === selectedProject)?.detailImages?.map((img, idx) => (
                   <div key={idx} className="rounded-lg overflow-hidden shadow-md h-64">
                     <img 
@@ -231,14 +287,7 @@ const Projects: React.FC = () => {
                     />
                   </div>
                 ))}
-              </div>
-              
-              {/* Detailed description */}
-              <div className="prose max-w-none">
-                <p className="text-gray-700 whitespace-pre-line">
-                  {getProjectDetailDescription(selectedProject)}
-                </p>
-              </div>
+              </div> */}
               
               {/* Technologies */}
               <div className="mt-6">
@@ -278,8 +327,32 @@ const Projects: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Full-size image modal */}
+{selectedImage && (
+  <div 
+    className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4 animate-fadeIn"
+    onClick={closeImageModal}
+  >
+    <div className="relative max-w-7xl w-full max-h-[90vh] flex items-center justify-center">
+      <button 
+        onClick={closeImageModal}
+        className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+      >
+        <X className="h-8 w-8" />
+      </button>
+      <img 
+        src={selectedImage} 
+        alt="Full size preview" 
+        className="max-w-full max-h-[85vh] object-contain rounded-lg"
+      />
+    </div>
+  </div>
+)}
+
     </section>
   );
 };
+
 
 export default Projects;
