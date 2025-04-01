@@ -149,13 +149,6 @@ const Projects: React.FC = () => {
     return t(`${projectId}.detailDescription`);
   };
 
-  const images = [
-    { id: 1, src: C0, alt: "Description image 1" },
-    { id: 2, src: C1, alt: "Description image 2" },
-    { id: 3, src: C2, alt: "Description image 3" },
-    { id: 4, src: C3, alt: "Description image 4" },
-    { id: 5, src: C4, alt: "Description image 5" }
-  ];
   
   return (
     <section id="projects" ref={sectionRef} className="py-16 md:py-24 bg-white">
