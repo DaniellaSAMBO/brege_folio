@@ -28,6 +28,8 @@ const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+  const imageModalRef = useRef<HTMLDivElement>(null);
+
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -56,17 +58,46 @@ const Projects: React.FC = () => {
     const handleClickOutside = (event: MouseEvent) => {
       if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
         setSelectedProject(null);
+        setSelectedImage(null);
       }
     };
-
-    if (selectedProject) {
+  
+    if (selectedProject && !selectedImage) {
       document.addEventListener('mousedown', handleClickOutside);
     }
-
+  
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [selectedProject]);
+  }, [selectedProject, selectedImage]);
+
+  useEffect(() => {
+    const handleImageModalClickOutside = (event: MouseEvent) => {
+      if (imageModalRef.current && !imageModalRef.current.contains(event.target as Node)) {
+        setSelectedImage(null);
+      }
+    };
+  
+    if (selectedImage) {
+      document.addEventListener('mousedown', handleImageModalClickOutside);
+    }
+  
+    return () => {
+      document.removeEventListener('mousedown', handleImageModalClickOutside);
+    };
+  }, [selectedImage]);
+
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+    } else if (selectedProject) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [selectedImage, selectedProject]);
+  
+  
 
   const projects = [
     // {
@@ -228,7 +259,7 @@ const Projects: React.FC = () => {
 
       {/* Modal for project details */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4 animate-fadeIn">
+        <div className="fixed inset-0 bg-black bg-opacity-75 z-40 flex items-center justify-center p-4 animate-fadeIn">
           <div 
             ref={modalRef}
             className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto animate-scaleIn"
