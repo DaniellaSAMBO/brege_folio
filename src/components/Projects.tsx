@@ -110,8 +110,8 @@ const Projects: React.FC = () => {
       id: 'project1',
       image: serverless,
       tags: ['AWS Lambda', 'DynamoDB', 'CloudFront', 'Route 53', 'S3', 'Serverless'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/yourusername/serverless-aws',
+      
+      githubUrl: 'https://github.com/Brege-NG/Serverless_app',
       detailImages: [
         preuve1,
         preuve2,
