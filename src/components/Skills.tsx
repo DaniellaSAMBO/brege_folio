@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
     { name: 'Linux/Unix', level: 85 },
     { name: 'Docker', level: 70 },
     { name: 'Kubernetes', level: 40 },
-    { name: 'AWS', level: 20 },
+    { name: 'AWS', level: 40 },
     { name: 'CI/CD Pipelines', level: 50 },
     { name: 'Monitoring', level: 70 },
   ];
