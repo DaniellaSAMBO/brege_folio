@@ -10,6 +10,11 @@ import ph1 from '../components/assets/ph1.png';
 import ph2 from '../components/assets/ph2.png';
 import ph3 from '../components/assets/ph3.png';
 import ph4 from '../components/assets/ph4.png';
+import serverless from '../components/assets/serverless.jpeg';
+import preuve1 from '../components/assets/preuve1.png';
+import preuve2 from '../components/assets/preuve2.png';
+import preuve3 from '../components/assets/preuve3.png';
+import preuve4 from '../components/assets/preuve4.png';
 
 interface Project {
   id: string;
@@ -100,6 +105,21 @@ const Projects: React.FC = () => {
   
 
   const projects = [
+
+    {
+      id: 'project1',
+      image: serverless,
+      tags: ['AWS Lambda', 'DynamoDB', 'CloudFront', 'Route 53', 'S3', 'Serverless'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/yourusername/serverless-aws',
+      detailImages: [
+        preuve1,
+        preuve2,
+        preuve3,
+        preuve4,
+      ]
+    },
+
     // {
     //   id: 'project1',
     //   image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',

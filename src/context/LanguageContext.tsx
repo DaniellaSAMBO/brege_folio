@@ -66,6 +66,28 @@ export const translations = {
     'certificates.certificatesTitle': 'Professional Certifications',
     'certificates.view': 'View Certificate',
 
+
+    'project1.title': 'Serverless Web Application on AWS',
+    'project1.description': 'Building a scalable serverless web application fully hosted on AWS using AWS Lambda, DynamoDB, CloudFront, Route 53, and S3.',
+    'project1.detailDescription': `A dynamic application enabling users to interact with a DynamoDB database through CRUD operations (Create, Read, Update, Delete) - all without managing a single server!.
+
+Key Features:
+- Serverless backend using AWS Lambda functions
+- NoSQL database with Amazon DynamoDB for flexible data storage
+- Content delivery through CloudFront CDN
+- Custom domain configuration with Route 53
+- Static asset hosting on S3
+
+
+Technical Implementation:
+- Created Lambda function to handle CRUD operations
+- Implemented DynamoDB tables with optimized access patterns
+- Set up CloudFront distribution with custom SSL certificate
+- Configured Route 53 for domain management
+- Established S3 bucket for static content hosting
+
+The architecture ensures high availability, automatic scaling, and cost optimization through pay-per-use pricing models.`,
+
 //     // Project 1
 //     'project1.title': 'Infrastructure as Code',
 //     'project1.description': 'Implementation of a complete infrastructure on AWS using Terraform and Ansible. Automation of server, network, and service provisioning with a GitOps approach.',
@@ -93,7 +115,7 @@ The pipeline includes the following steps:
 - Clean all of the containers
 - Staging-deploy App
 - Build for production
-- Deploy to Netlify
+- Deploy to Netlify . 
 
 🐳 Dockerization I dockerized my application by creating a Dockerfile for the front-end and using Docker Compose to orchestrate the entire setup with JSON-Server, making my application easily deployable.
 
@@ -216,6 +238,27 @@ Feel free to test the app and share your feedback! 😊`,
     'certificates.diplomasTitle': 'Diplômes Académiques',
     'certificates.certificatesTitle': 'Certifications Professionnelles',
     'certificates.view': 'Voir le Certificat',
+
+
+    'project1.title': 'Application Web Serverless sur AWS',
+    'project1.description': 'Construction d\'une application web serverless évolutive entièrement hébergée sur AWS utilisant AWS Lambda, DynamoDB, CloudFront, Route 53 et S3. ',
+    'project1.detailDescription': `Une application dynamique permettant aux utilisateurs d'interagir avec une base de données DynamoDB via des opérations CRUD (Create, Read, Update, Delete), le tout sans gérer un seul serveur !.
+
+Fonctionnalités principales :
+- Backend serverless utilisant les fonctions AWS Lambda
+- Base de données NoSQL avec Amazon DynamoDB pour un stockage flexible des données
+- Distribution de contenu via le CDN CloudFront
+- Configuration de domaine personnalisé avec Route 53
+- Hébergement d'actifs statiques sur S3
+
+Implémentation technique :
+- Création d'une fonction Lambda pour gérer les opérations CRUD
+- Implémentation de tables DynamoDB avec des modèles d'accès optimisés
+- Configuration de la distribution CloudFront avec certificat SSL personnalisé
+- Configuration de Route 53 pour la gestion des domaines
+- Mise en place d'un bucket S3 pour l'hébergement de contenu statique
+
+L'architecture assure une haute disponibilité, une mise à l'échelle automatique et une optimisation des coûts grâce aux modèles de tarification à l'usage.`,
 
 //     // Project 1
 //     'project1.title': 'Infrastructure as Code',
