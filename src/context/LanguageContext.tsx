@@ -63,7 +63,7 @@ export const translations = {
     'certificates.title': 'Certificates & Diplomas',
     'certificates.description': 'My educational background and professional certifications in DevOps and cloud technologies.',
     'certificates.diplomasTitle': 'Academic Diplomas',
-    'certificates.certificatesTitle': 'Professional Certifications',
+    'certificates.certificatesTitle': 'Professional Certifications / Badges',
     'certificates.view': 'View Certificate',
 
 
@@ -287,7 +287,7 @@ This infrastructure demonstrates best practices for AWS networking, including se
     'certificates.title': 'Certificats & Diplômes',
     'certificates.description': 'Mon parcours académique et mes certifications professionnelles en DevOps et technologies cloud.',
     'certificates.diplomasTitle': 'Diplômes Académiques',
-    'certificates.certificatesTitle': 'Certifications Professionnelles',
+    'certificates.certificatesTitle': 'Certifications / Badges Professionnelles',
     'certificates.view': 'Voir le Certificat',
 
 
