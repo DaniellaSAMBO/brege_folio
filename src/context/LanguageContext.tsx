@@ -166,6 +166,57 @@ Users can now securely store and access their information, thanks to Firebase in
 
 Feel free to test the app and share your feedback! 😊`,
 
+
+ // Project 5
+ 'project5.title': 'AWS VPC with React Application',
+ 'project5.description': 'Implementation of a complete AWS infrastructure with VPC, subnet, Internet Gateway, and a React application running on an EC2 instance.',
+ 'project5.detailDescription': `This project demonstrates the implementation of a secure and scalable AWS infrastructure hosting a React application.
+
+Key Features:
+- Custom VPC with public subnet
+- Internet Gateway for public internet access
+- EC2 instance running a React application
+- Security groups for access control
+- Elastic IP for stable public addressing
+- Route tables for network traffic management
+
+Technical Implementation:
+- VPC created with CIDR block 10.0.0.0/16
+- Public subnet with CIDR 10.0.1.0/24
+- Internet Gateway attached to VPC
+- Route table configured for internet access
+- EC2 instance with Amazon Linux 2
+- Nginx server configured as reverse proxy
+- React application deployed with PM2
+- Security group allowing HTTP/HTTPS traffic
+
+The architecture ensures secure and reliable hosting of the React application while maintaining best practices for AWS networking.`,
+
+ // Project 6
+ 'project6.title': 'Advanced AWS Networking',
+ 'project6.description': 'Design and implementation of a sophisticated AWS network architecture with public and private subnets, NAT Gateway, and advanced routing.',
+ 'project6.detailDescription': `This project showcases advanced AWS networking concepts with a focus on security and high availability.
+
+Key Features:
+- VPC with multiple subnets (public and private)
+- NAT Gateway for private subnet internet access
+- Advanced routing configuration
+- Network ACLs for additional security
+- Bastion host for secure access
+- High availability design
+
+Technical Implementation:
+- VPC with CIDR block 10.0.0.0/16
+- Public subnet (10.0.1.0/24) for internet-facing resources
+- Private subnet (10.0.2.0/24) for protected resources
+- NAT Gateway deployed in public subnet
+- Custom route tables for both subnets
+- Network ACLs with specific allow/deny rules
+- Bastion host in public subnet for secure access
+- Security groups configured for minimal access
+
+This infrastructure demonstrates best practices for AWS networking, including security, scalability, and maintainability.`,
+
     // Contact
     'contact.title': 'Contact Me',
     'contact.subtitle': 'Do you have a project in mind or would you like to collaborate? Feel free to contact me using the form below.',

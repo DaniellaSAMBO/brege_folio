@@ -15,6 +15,8 @@ import preuve1 from '../components/assets/preuve1.png';
 import preuve2 from '../components/assets/preuve2.png';
 import preuve3 from '../components/assets/preuve3.png';
 import preuve4 from '../components/assets/preuve4.png';
+import RA from '../components/assets/RA.jpeg';
+import AWI from '../components/assets/AWI.jpg';
 
 interface Project {
   id: string;
@@ -165,6 +167,34 @@ const Projects: React.FC = () => {
         ph4
       ]
     },
+
+    {
+      id: 'project5',
+      image: RA,
+      tags: ['AWS', 'VPC', 'EC2', 'React', 'Infrastructure'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/yourusername/aws-vpc-react',
+      detailImages: [
+        'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80'
+      ]
+    },
+
+    {
+      id: 'project6',
+      image: AWI,
+      tags: ['AWS', 'VPC', 'Subnets', 'NAT Gateway', 'Infrastructure'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/yourusername/aws-advanced-networking',
+      detailImages: [
+        'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80'
+      ]
+    }
   ];
 
   const openProjectDetails = (projectId: string) => {
