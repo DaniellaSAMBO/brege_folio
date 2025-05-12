@@ -66,7 +66,7 @@ export const translations = {
     'certificates.certificatesTitle': 'Professional Certifications / Badges',
     'certificates.view': 'View Certificate',
 
-
+//     // Project 1
     'project1.title': 'Serverless Web Application on AWS',
     'project1.description': 'Building a scalable serverless web application fully hosted on AWS using AWS Lambda, DynamoDB, CloudFront, Route 53, and S3.',
     'project1.detailDescription': `A dynamic application enabling users to interact with a DynamoDB database through CRUD operations (Create, Read, Update, Delete) - all without managing a single server!.
@@ -88,45 +88,33 @@ Technical Implementation:
 
 The architecture ensures high availability, automatic scaling, and cost optimization through pay-per-use pricing models.`,
 
-//     // Project 1
-//     'project1.title': 'Infrastructure as Code',
-//     'project1.description': 'Implementation of a complete infrastructure on AWS using Terraform and Ansible. Automation of server, network, and service provisioning with a GitOps approach.',
-//     'project1.detailDescription': `This project involved setting up a complete infrastructure on AWS using Terraform for resource provisioning and Ansible for server configuration.
-
-// Key achievements include:
-// - Creation of a multi-AZ VPC with public and private subnets
-// - Deployment of auto-scaling EC2 instances behind a load balancer
-// - Configuration of an RDS database with replication
-// - Implementation of an S3 storage system for backups
-// - Complete deployment automation via CI/CD pipelines
-// - Implementation of security and monitoring best practices
-
-// All infrastructure code is versioned and follows a GitOps approach, allowing for reproducible and auditable deployments.`,
 
     // Project 2
-    'project2.title': 'CI/CD Pipeline',
-    'project2.description': 'Design and implementation of a complete CI/CD pipeline with Jenkins for a React application using JSON-Server, including code analysis and continuous deployment on Netlify.',
-    'project2.detailDescription': `Recently, I developed a TodoList application using JSON-Server for the back-end and Axios for the front-end. I also set up a continuous integration and automatic deployment workflow.
+    
+ 'project2.title': 'AWS VPC with React Application',
+ 'project2.description': 'Implementation of a complete AWS infrastructure with VPC, subnet, Internet Gateway, and a React application running on an EC2 instance.',
+ 'project2.detailDescription': `This project demonstrates the implementation of a secure and scalable AWS infrastructure hosting a React application.
 
-The pipeline includes the following steps:
+Key Features:
+- Custom VPC with public subnet
+- Internet Gateway for public internet access
+- EC2 instance running a React application
+- Security groups for access control
+- Elastic IP for stable public addressing
+- Route tables for network traffic management
 
-- Install dependencies
-- Build Application
-- Clean all of the containers
-- Staging-deploy App
-- Build for production
-- Deploy to Netlify . 
+Technical Implementation:
+- VPC created with CIDR block 10.0.0.0/16
+- Public subnet with CIDR 10.0.1.0/24
+- Internet Gateway attached to VPC
+- Route table configured for internet access
+- EC2 instance with Amazon Linux 2
+- Nginx server configured as reverse proxy
+- React application deployed with PM2
+- Security group allowing HTTP/HTTPS traffic
 
-🐳 Dockerization I dockerized my application by creating a Dockerfile for the front-end and using Docker Compose to orchestrate the entire setup with JSON-Server, making my application easily deployable.
+The architecture ensures secure and reliable hosting of the React application while maintaining best practices for AWS networking.`,
 
-⚙️ Continuous Integration with Jenkins I configured a CI pipeline with Jenkins, which triggers on every commit. This pipeline checks the status of Docker images and my docker-compose.ymlfile, using secured credentials to access the necessary resources. I also used ngrok to expose the application locally and set up a webhook.
-
-💻 Free Deployment on Netlify I chose Netlify to host my application. With every commit validation, my pipeline automatically deploys the changes with no additional effort.
-
-🤩 Advantages 
-✔️ Dockerization: Facilitates deployment and portability. 
-✔️ Continuous Integration with Jenkins: Quickly validates code changes using secured credentials. 
-✔️ Free Deployment: Significantly reduces infrastructure costs.`,
 
     // Project 3
     'project3.title': 'Monitoring System',
@@ -154,48 +142,10 @@ I also configured Node Exporter, which is a tool for monitoring system metrics s
 All these collected data are then visualized and presented in Grafana. Grafana allows creating interactive and customizable dashboards, offering a comprehensive and real-time view of the monitored systems' status. 🌐`,
 
     // Project 4
-    'project4.title': 'Authentication Mobile App',
-    'project4.description': 'Creation of a mobile app for Permit/Registration Card control.',
-    'project4.detailDescription': `This innovative project involved developing a mobile application that allows instant verification of the authenticity of driver's licenses and vehicle registration documents to combat document fraud.
 
-    I am thrilled to announce the launch of my mobile app for Permit and Registration Card control, developed with Flutter, Dart, and Firebase. This innovative solution aims to simplify and secure administrative verifications for traffic officers. 🚀
-
-With a user-friendly interface and robust features, the app allows efficient real-time document management. Users can log in, scan the QR code on their permit to verify its authenticity, and enter a registration card number to validate its information. 🌐
-
-Users can now securely store and access their information, thanks to Firebase integration. 🔒
-
-Feel free to test the app and share your feedback! 😊`,
-
-
- // Project 5
- 'project5.title': 'AWS VPC with React Application',
- 'project5.description': 'Implementation of a complete AWS infrastructure with VPC, subnet, Internet Gateway, and a React application running on an EC2 instance.',
- 'project5.detailDescription': `This project demonstrates the implementation of a secure and scalable AWS infrastructure hosting a React application.
-
-Key Features:
-- Custom VPC with public subnet
-- Internet Gateway for public internet access
-- EC2 instance running a React application
-- Security groups for access control
-- Elastic IP for stable public addressing
-- Route tables for network traffic management
-
-Technical Implementation:
-- VPC created with CIDR block 10.0.0.0/16
-- Public subnet with CIDR 10.0.1.0/24
-- Internet Gateway attached to VPC
-- Route table configured for internet access
-- EC2 instance with Amazon Linux 2
-- Nginx server configured as reverse proxy
-- React application deployed with PM2
-- Security group allowing HTTP/HTTPS traffic
-
-The architecture ensures secure and reliable hosting of the React application while maintaining best practices for AWS networking.`,
-
- // Project 6
- 'project6.title': 'Advanced AWS Networking',
- 'project6.description': 'Design and implementation of a sophisticated AWS network architecture with public and private subnets, NAT Gateway, and advanced routing.',
- 'project6.detailDescription': `This project showcases advanced AWS networking concepts with a focus on security and high availability.
+    'project4.title': 'Advanced AWS Networking',
+ 'project4.description': 'Design and implementation of a sophisticated AWS network architecture with public and private subnets, NAT Gateway, and advanced routing.',
+ 'project4.detailDescription': `This project showcases advanced AWS networking concepts with a focus on security and high availability.
 
 Key Features:
 - VPC with multiple subnets (public and private)
@@ -217,6 +167,49 @@ Technical Implementation:
 
 This infrastructure demonstrates best practices for AWS networking, including security, scalability, and maintainability.`,
 
+
+
+//  // Project 5
+
+//     'project5.title': 'CI/CD Pipeline',
+//     'project5.description': 'Design and implementation of a complete CI/CD pipeline with Jenkins for a React application using JSON-Server, including code analysis and continuous deployment on Netlify.',
+//     'project5.detailDescription': `Recently, I developed a TodoList application using JSON-Server for the back-end and Axios for the front-end. I also set up a continuous integration and automatic deployment workflow.
+
+// The pipeline includes the following steps:
+
+// - Install dependencies
+// - Build Application
+// - Clean all of the containers
+// - Staging-deploy App
+// - Build for production
+// - Deploy to Netlify . 
+
+// 🐳 Dockerization I dockerized my application by creating a Dockerfile for the front-end and using Docker Compose to orchestrate the entire setup with JSON-Server, making my application easily deployable.
+
+// ⚙️ Continuous Integration with Jenkins I configured a CI pipeline with Jenkins, which triggers on every commit. This pipeline checks the status of Docker images and my docker-compose.ymlfile, using secured credentials to access the necessary resources. I also used ngrok to expose the application locally and set up a webhook.
+
+// 💻 Free Deployment on Netlify I chose Netlify to host my application. With every commit validation, my pipeline automatically deploys the changes with no additional effort.
+
+// 🤩 Advantages 
+// ✔️ Dockerization: Facilitates deployment and portability. 
+// ✔️ Continuous Integration with Jenkins: Quickly validates code changes using secured credentials. 
+// ✔️ Free Deployment: Significantly reduces infrastructure costs.`,
+
+
+//  // Project 5
+
+//  'project5.title': 'Authentication Mobile App',
+//  'project5.description': 'Creation of a mobile app for Permit/Registration Card control.',
+//  'project5.detailDescription': `This innovative project involved developing a mobile application that allows instant verification of the authenticity of driver's licenses and vehicle registration documents to combat document fraud.
+
+//  I am thrilled to announce the launch of my mobile app for Permit and Registration Card control, developed with Flutter, Dart, and Firebase. This innovative solution aims to simplify and secure administrative verifications for traffic officers. 🚀
+
+// With a user-friendly interface and robust features, the app allows efficient real-time document management. Users can log in, scan the QR code on their permit to verify its authenticity, and enter a registration card number to validate its information. 🌐
+
+// Users can now securely store and access their information, thanks to Firebase integration. 🔒
+
+// Feel free to test the app and share your feedback! 😊`,
+ 
     // Contact
     'contact.title': 'Contact Me',
     'contact.subtitle': 'Do you have a project in mind or would you like to collaborate? Feel free to contact me using the form below.',
@@ -290,7 +283,7 @@ This infrastructure demonstrates best practices for AWS networking, including se
     'certificates.certificatesTitle': 'Certifications / Badges Professionnelles',
     'certificates.view': 'Voir le Certificat',
 
-
+//project 1
     'project1.title': 'Application Web Serverless sur AWS',
     'project1.description': 'Construction d\'une application web serverless évolutive entièrement hébergée sur AWS utilisant AWS Lambda, DynamoDB, CloudFront, Route 53 et S3. ',
     'project1.detailDescription': `Une application dynamique permettant aux utilisateurs d'interagir avec une base de données DynamoDB via des opérations CRUD (Create, Read, Update, Delete), le tout sans gérer un seul serveur !.
@@ -311,49 +304,65 @@ Implémentation technique :
 
 L'architecture assure une haute disponibilité, une mise à l'échelle automatique et une optimisation des coûts grâce aux modèles de tarification à l'usage.`,
 
-//     // Project 1
-//     'project1.title': 'Infrastructure as Code',
-//     'project1.description': 'Mise en place d\'une infrastructure complète sur AWS en utilisant Terraform et Ansible. Automatisation du provisionnement des serveurs, des réseaux et des services avec une approche GitOps.',
-//     'project1.detailDescription': `Ce projet a consisté à mettre en place une infrastructure complète sur AWS en utilisant Terraform pour le provisionnement des ressources et Ansible pour la configuration des serveurs.
 
-// Les principales réalisations incluent:
-// - Création d'un réseau VPC multi-AZ avec sous-réseaux publics et privés
-// - Déploiement d'instances EC2 auto-scalables derrière un équilibreur de charge
-// - Configuration d'une base de données RDS avec réplication
-// - Mise en place d'un système de stockage S3 pour les sauvegardes
-// - Automatisation complète du déploiement via des pipelines CI/CD
-// - Implémentation de bonnes pratiques de sécurité et de surveillance
+//     // Project 2
+//     'project2.title': 'Pipeline CI/CD',
+//     'project2.description': 'Conception et implémentation d\'un pipeline CI/CD complet avec Jenkins pour une application React avec json-server. de l\'analyse de code et du déploiement continu sur Netlify.',
+//     'project2.detailDescription': `Récemment, j'ai développé une application TodoList avec JSON-Server pour le back-end et Axios pour le front-end. J'ai également mis en place un workflow d'intégration continue et de déploiement automatique.
 
-// L'ensemble du code d'infrastructure est versionné et suit une approche GitOps, permettant des déploiements reproductibles et auditables.`,
+// Le pipeline comprend les étapes suivantes:
+// - Installer les dépendances
+// - Builder l'application
+// - supprimer tous les containers
+// - Déploiement en staging
+// - Builder pour la production
+// - Deployer sur Netlify
 
-    // Project 2
-    'project2.title': 'Pipeline CI/CD',
-    'project2.description': 'Conception et implémentation d\'un pipeline CI/CD complet avec Jenkins pour une application React avec json-server. de l\'analyse de code et du déploiement continu sur Netlify.',
-    'project2.detailDescription': `Récemment, j'ai développé une application TodoList avec JSON-Server pour le back-end et Axios pour le front-end. J'ai également mis en place un workflow d'intégration continue et de déploiement automatique.
+// 🐳 Dockerisation
+// J'ai dockerisé mon application en créant un Dockerfile pour le front-end et en utilisant Docker Compose pour orchestrer l'ensemble avec JSON-Server, rendant ainsi mon application facilement déployable.
 
-Le pipeline comprend les étapes suivantes:
-- Installer les dépendances
-- Builder l'application
-- supprimer tous les containers
-- Déploiement en staging
-- Builder pour la production
-- Deployer sur Netlify
+// ⚙️ Intégration continue avec Jenkins
+// J'ai configuré un pipeline CI avec Jenkins, qui se déclenche à chaque commit. Ce pipeline vérifie l'état des images Docker et de mon fichier docker-compose.yml, en utilisant des credentials sécurisés pour accéder aux ressources nécessaires. J'ai également utilisé ngrok pour exposer l'application localement et configurer un webhook.
 
-🐳 Dockerisation
-J'ai dockerisé mon application en créant un Dockerfile pour le front-end et en utilisant Docker Compose pour orchestrer l'ensemble avec JSON-Server, rendant ainsi mon application facilement déployable.
+// 💻 Déploiement gratuit sur Netlify
+// J'ai choisi Netlify pour héberger mon application. À chaque validation de commit, mon pipeline déploie automatiquement les changements, sans effort supplémentaire.
 
-⚙️ Intégration continue avec Jenkins
-J'ai configuré un pipeline CI avec Jenkins, qui se déclenche à chaque commit. Ce pipeline vérifie l'état des images Docker et de mon fichier docker-compose.yml, en utilisant des credentials sécurisés pour accéder aux ressources nécessaires. J'ai également utilisé ngrok pour exposer l'application localement et configurer un webhook.
+// 🤩 Les avantages
+//  ✔️Dockerisation : Facilite le déploiement et la portabilité.
+//  ✔️Intégration continue avec Jenkins : Valide rapidement les modifications de code tout en utilisant des credentials sécurisés.
+//  ✔️Déploiement gratuit : Réduit considérablement les coûts d'infrastructure.
 
-💻 Déploiement gratuit sur Netlify
-J'ai choisi Netlify pour héberger mon application. À chaque validation de commit, mon pipeline déploie automatiquement les changements, sans effort supplémentaire.
+// `,
 
-🤩 Les avantages
- ✔️Dockerisation : Facilite le déploiement et la portabilité.
- ✔️Intégration continue avec Jenkins : Valide rapidement les modifications de code tout en utilisant des credentials sécurisés.
- ✔️Déploiement gratuit : Réduit considérablement les coûts d'infrastructure.
 
-`,
+    // Projet 2
+'project2.title': 'VPC AWS avec une Application React',
+'project2.description': 'Mise en place d\'une infrastructure AWS complète avec VPC, sous-réseau, Internet Gateway et une application React exécutée sur une instance EC2.',
+'project2.detailDescription': `Ce projet illustre la mise en œuvre d'une infrastructure AWS sécurisée et évolutive hébergeant une application React.
+
+Fonctionnalités clés :
+- VPC personnalisé avec un sous-réseau public
+- Internet Gateway pour l'accès public à Internet
+- Instance EC2 exécutant une application React
+- Groupes de sécurité pour le contrôle d'accès
+- IP Elastic pour une adressage public stable
+- Tables de routage pour la gestion du trafic réseau
+
+Mise en œuvre technique :
+- VPC créé avec le bloc CIDR 10.0.0.0/16
+- Sous-réseau public avec CIDR 10.0.1.0/24
+- Internet Gateway attaché au VPC
+- Table de routage configurée pour l'accès Internet
+- Instance EC2 avec Amazon Linux 2
+- Serveur Nginx configuré en tant que proxy inverse
+- Application React déployée avec 
+- Groupe de sécurité autorisant le trafic HTTP/HTTPS
+
+L'architecture garantit un hébergement sécurisé et fiable de l'application React tout en respectant les bonnes pratiques de mise en réseau AWS.`,
+    
+
+
+
 
     // Project 3
     'project3.title': 'Système de Monitoring',
@@ -378,23 +387,50 @@ J'ai également configuré Node Exporter, qui est un outil permettant de surveil
 
 Toutes ces données collectées sont ensuite visualisées et présentées dans Grafana. Grafana permet de créer des tableaux de bord interactifs et personnalisables, offrant une vue complète et en temps réel de l'état des systèmes surveillés. 🌐`,
 
-    // Project 4
-    'project4.title': 'App Mobile d\'Authenticité',
-    'project4.description': 'Création d\'une app mobile pour le contrôle Permis/Carte grise',
-    'project4.detailDescription': `Ce projet innovant a consisté à développer une application mobile permettant de vérifier instantanément l'authenticité des permis de conduire et des cartes grises, afin de lutter contre la fraude documentaire.
 
-Je suis ravi d'annoncer le lancement de mon application mobile pour le contrôle des Permis et Cartes Grises, développée avec Flutter, Dart et Firebase. Cette solution innovante vise à simplifier et à sécuriser les vérifications administratives pour les agents de la circulation. 🚀
+// Projet 4
+'project4.title': 'Réseau AWS Avancé',
+'project4.description': 'Conception et implémentation d\'une architecture réseau AWS sophistiquée avec sous-réseaux publics/privés, NAT Gateway et routage avancé.',
+'project4.detailDescription': `Ce projet met en œuvre des concepts réseaux AWS avancés avec un accent sur la sécurité et la haute disponibilité.
+
+Fonctionnalités clés :
+- VPC avec multiples sous-réseaux (publics et privés)
+- NAT Gateway pour l'accès Internet des sous-réseaux privés
+- Configuration de routage avancée
+- ACLs réseau pour une sécurité renforcée
+- Hôte bastion pour un accès sécurisé
+- Conception haute disponibilité
+
+Implémentation technique :
+- VPC avec bloc CIDR 10.0.0.0/16
+- Sous-réseau public (10.0.1.0/24) pour les ressources exposées
+- Sous-réseau privé (10.0.2.0/24) pour les ressources protégées
+- NAT Gateway déployé dans le sous-réseau public
+- Tables de routage personnalisées pour chaque sous-réseau
+- ACLs réseau avec règles allow/deny spécifiques
+- Hôte bastion dans le sous-réseau public pour accès sécurisé
+- Groupes de sécurité configurés pour un accès minimal
+
+Cette infrastructure démontre les bonnes pratiques pour les réseaux AWS, incluant sécurité, scalabilité et maintenabilité.`,
 
 
-Avec une interface conviviale et des fonctionnalités robustes, l'application permet une gestion efficace des documents en temps réel. Les utilisateurs peuvent se connecter, scanner le code QR sur leur permis pour vérifier son authenticité, et entrer un numéro de carte grise pour valider ses informations. 🌐
+//     // Project 4
+//     'project4.title': 'App Mobile d\'Authenticité',
+//     'project4.description': 'Création d\'une app mobile pour le contrôle Permis/Carte grise',
+//     'project4.detailDescription': `Ce projet innovant a consisté à développer une application mobile permettant de vérifier instantanément l'authenticité des permis de conduire et des cartes grises, afin de lutter contre la fraude documentaire.
+
+// Je suis ravi d'annoncer le lancement de mon application mobile pour le contrôle des Permis et Cartes Grises, développée avec Flutter, Dart et Firebase. Cette solution innovante vise à simplifier et à sécuriser les vérifications administratives pour les agents de la circulation. 🚀
 
 
-Les utilisateurs peuvent désormais stocker et accéder à leurs informations en toute sécurité, grâce à l'intégration de Firebase. 🔒
+// Avec une interface conviviale et des fonctionnalités robustes, l'application permet une gestion efficace des documents en temps réel. Les utilisateurs peuvent se connecter, scanner le code QR sur leur permis pour vérifier son authenticité, et entrer un numéro de carte grise pour valider ses informations. 🌐
 
 
-N'hésitez pas à tester l'application et à partager vos retours ! 😊
+// Les utilisateurs peuvent désormais stocker et accéder à leurs informations en toute sécurité, grâce à l'intégration de Firebase. 🔒
 
-    `,
+
+// N'hésitez pas à tester l'application et à partager vos retours ! 😊
+
+//     `,
 
     // Contact
     'contact.title': 'Contactez-Moi',

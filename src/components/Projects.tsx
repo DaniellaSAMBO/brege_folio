@@ -17,6 +17,13 @@ import preuve3 from '../components/assets/preuve3.png';
 import preuve4 from '../components/assets/preuve4.png';
 import RA from '../components/assets/RA.jpeg';
 import AWI from '../components/assets/AWI.jpg';
+import shop1 from '../components/assets/shop1.png';
+import shop2 from '../components/assets/shop2.png';
+import shop3 from '../components/assets/shop3.png';
+import archi1 from '../components/assets/archi1.png';
+import archi2 from '../components/assets/archi2.png';
+import archi3 from '../components/assets/archi3.png';
+import archi4 from '../components/assets/archi4.png';
 
 interface Project {
   id: string;
@@ -122,27 +129,18 @@ const Projects: React.FC = () => {
       ]
     },
 
-    // {
-    //   id: 'project1',
-    //   image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    //   tags: ['Terraform', 'AWS', 'Ansible', 'GitOps'],
-    //   liveUrl: 'https://example.com',
-    //   githubUrl: 'https://github.com/yourusername/project',
-    //   detailImages: [
-    //     'https://images.unsplash.com/photo-1607968565043-36af90dde238?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    //     'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-    //   ]
-    // },
     {
       id: 'project2',
-      image:'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
-      tags: ['Jenkins', 'Docker', 'Netlify', 'Git/Github', 'CI/CD'],
-      // liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/Brege-NG',
+      image: RA,
+      tags: ['AWS', 'VPC', 'EC2', 'React', 'Infrastructure'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/yourusername/aws-vpc-react',
       detailImages: [
-        Ch0,Ch1,Ch2,Ch3,Ch4
+        shop1,
+        shop2,
+        shop3
       ]
-},
+    },
     {
       id: 'project3',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
@@ -156,45 +154,44 @@ const Projects: React.FC = () => {
     },
     {
       id: 'project4',
-      image: 'https://images.unsplash.com/photo-1596558450255-7c0b7be9d56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      tags: ['Mobile', 'Security', 'Flutter', 'Dart'],
-      // liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/rv-gates/permis-Carte_grise',
-      detailImages: [
-        ph1,
-        ph2,
-        ph3,
-        ph4
-      ]
-    },
-
-    {
-      id: 'project5',
-      image: RA,
-      tags: ['AWS', 'VPC', 'EC2', 'React', 'Infrastructure'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/yourusername/aws-vpc-react',
-      detailImages: [
-        'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
-        'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
-        'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
-        'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80'
-      ]
-    },
-
-    {
-      id: 'project6',
       image: AWI,
       tags: ['AWS', 'VPC', 'Subnets', 'NAT Gateway', 'Infrastructure'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/yourusername/aws-advanced-networking',
       detailImages: [
-        'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
-        'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
-        'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
-        'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80'
+        archi1,
+        archi2,
+        archi3,
+        archi4
       ]
-    }
+
+    },
+
+    // {
+    //   id: 'project5',
+    //   image: 'https://images.unsplash.com/photo-1596558450255-7c0b7be9d56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    //   tags: ['Mobile', 'Security', 'Flutter', 'Dart'],
+    //   // liveUrl: 'https://example.com',
+    //   githubUrl: 'https://github.com/rv-gates/permis-Carte_grise',
+    //   detailImages: [
+    //     ph1,
+    //     ph2,
+    //     ph3,
+    //     ph4
+    //   ]
+
+    // },
+
+    // {
+    //   id: 'project6',
+    //   image:'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
+    //   tags: ['Jenkins', 'Docker', 'Netlify', 'Git/Github', 'CI/CD'],
+    //   // liveUrl: 'https://example.com',
+    //   githubUrl: 'https://github.com/Brege-NG',
+    //   detailImages: [
+    //     Ch0,Ch1,Ch2,Ch3,Ch4
+    //   ]
+    // }
   ];
 
   const openProjectDetails = (projectId: string) => {
